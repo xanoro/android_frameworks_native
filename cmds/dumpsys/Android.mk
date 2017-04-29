@@ -12,7 +12,7 @@ LOCAL_SHARED_LIBRARIES := \
 
 
 ifeq ($(TARGET_OS),linux)
-	LOCAL_CFLAGS += -DXP_UNIX
+	LOCAL_CFLAGS += -DXP_UNIX -std=c++1y
 	#LOCAL_SHARED_LIBRARIES += librt
 endif
 
